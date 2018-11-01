@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="384dp"
+        android:layout_height="512dp"
+        android:background="@color/ss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:alpha="0.6"
+                android:background="@drawable/roundrect"
+                app:layout_constraintBottom_toTopOf="@+id/start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toLeftOf="@+id/start"
+                android:layout_toStartOf="@+id/start"
+                android:background="@drawable/shape"
+                app:layout_constraintBottom_toBottomOf="@+id/start"
+                app:layout_constraintEnd_toStartOf="@+id/start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@mipmap/ic_pause_foreground" />
+
+            <ImageButton
+                android:id="@+id/stop"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_alignTop="@+id/pause"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/start"
+                android:background="@drawable/shape"
+                app:layout_constraintBottom_toBottomOf="@+id/start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@mipmap/ic_stop_foreground" />
+
+            <ImageButton
+                android:id="@+id/start"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_alignTop="@+id/pause"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/shape"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/stop"
+                app:layout_constraintStart_toEndOf="@+id/pause"
+                app:srcCompat="@mipmap/ic_start_icon" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="52dp"
+                android:text="Today's Goal:"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/start"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <EditText
+                android:id="@+id/hourInputGoal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:gravity="end"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/start"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/start"
+                app:layout_constraintStart_toEndOf="@+id/hourInputGoal" />
+
+            <EditText
+                android:id="@+id/minuteInputGoal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:gravity="start"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/start"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                tools:ignore="MissingPrefix" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="265dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Spinner
+                        android:id="@+id/activitySpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activityInput"
+                        android:layout_marginTop="21dp"
+                        android:layout_toLeftOf="@+id/fab2"
+                        android:layout_toStartOf="@+id/fab2"
+                        android:textSize="40sp" />
+
+                    <EditText
+                        android:id="@+id/activityInput"
+                        style="@android:style/Widget.DeviceDefault.Light.EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Add New Activity"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="@color/white" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/activitySpinner"
+                        android:layout_gravity="center|end"
+                        android:layout_marginTop="-10dp"
+                        app:backgroundTint="@android:color/black"
+                        app:layout_anchorGravity="left|top"
+                        app:srcCompat="@android:drawable/ic_delete" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center|end"
+                        android:layout_marginTop="4dp"
+                        app:backgroundTint="@android:color/black"
+                        app:layout_anchorGravity="right|top"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </RelativeLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:text="" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

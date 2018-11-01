@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/stopwatchTab"
+        android:enabled="true"
+        android:icon="@drawable/ic_time"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/timeGraphTab"
+        android:enabled="true"
+        android:icon="@drawable/ic_sum_time_logo"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/dailyGoalsTab"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_daily_goals"
+        android:title=""
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/treeTab"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_tree"
+        android:title=""
+        app:showAsAction="ifRoom" />
+
+</menu>
