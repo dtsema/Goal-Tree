@@ -27,6 +27,7 @@ public class DailyGoalsFragment extends Fragment implements Serializable {
     ArrayAdapter[] adapters;
     Boolean[] weekdays;
     Calendar c = Calendar.getInstance();
+    TextView activity;
     Integer timeFrameTotal, timeFrameDaysTotal, month = c.get(Calendar.MONTH),
             day = c.get(Calendar.DATE), year = c.get(Calendar.YEAR),
             weekDay = c.get(Calendar.DAY_OF_WEEK), todayWeekday = weekDay-1,
@@ -70,6 +71,8 @@ public class DailyGoalsFragment extends Fragment implements Serializable {
     }
 
     private void findViews(View view){
+        activity = view.findViewById(R.id.currentActivityGoals);
+            activity.setText(TimeGraphFragment.activityType);
         sunday = view.findViewById(R.id.sunday);
         monday = view.findViewById(R.id.monday);
         tuesday = view.findViewById(R.id.tuesday);
