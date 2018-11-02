@@ -4,7 +4,7 @@ android.defaultConfig.vectorDrawables.useSupportLibrary = true
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId 'com.example.danieltsema.goaltree'
+        applicationId 'com.danieltsema.goaltree'
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
