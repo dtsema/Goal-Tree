@@ -1,5 +1,8 @@
 # Goal-Tree
-Android productivity app that allows you to track your time doing certain activities and set goals while viewing your progress to your goals. (Pending app store approval)
+Android productivity app that allows you to track your time doing certain activities and set goals while viewing your progress to your goals.
+
+APK download:
+https://drive.google.com/file/d/1Og3zGk_wA_ScOVBOtfpv-fj_lHOKf08b/view?usp=sharing
 
 Features:
   * Time individual tasks
